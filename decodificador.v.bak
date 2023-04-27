@@ -1,0 +1,21 @@
+module decodificador (
+	input 		[6:0] opcode_i,
+	output				regwrite_o
+);
+
+	always @(*)
+	begin
+		case(opcode_i) 	// Se evalúa el valor del opcode_i
+			7'b0110011:		// Instrucciones tipo R
+				begin
+					regwrite_o = 1'b1;
+				end
+				
+			default:
+				begin
+					regwrite_o = 1'b0;
+				end
+			end
+		endcase
+	end
+endomodule

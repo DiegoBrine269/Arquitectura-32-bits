@@ -1,0 +1,31 @@
+module procesador (
+	input 			clk_i,		//señal de reloj
+	input				rst_ni, 		//reset activo en bajo
+	output[31:0]	wb_dato_o	//dato de write back al banco de registros
+);
+
+	// FETCH - Búsqueda y emisión de instrucciones
+	wire [31:0]		pc_next;			// wire porque el valor lo adquiere fuera de un bloque always
+	reg  [31:0]		pc_current;		// reg porque el valor lo adquiere fuera de un bloque always
+	
+	always @(posedge clk_i)
+	begin
+		pc_current <= pc_next;
+	end
+	
+	assign pc_next = pc_current + 4'h4;
+	
+	//Instancia de memoria
+	memoria icache (
+		.clk_i 			(clk_i),
+		.we_i				(1'b0),
+		.addwrite_i		(10'h0),
+		.datowrite_i	(32'h0),
+		.re_i				(1'b1),
+		.addread_i		(pc_o[11:2]),
+		.datoread_o		(fetch_inst_o),
+	);
+	
+	// DECODE - Decodificación
+
+endmodule

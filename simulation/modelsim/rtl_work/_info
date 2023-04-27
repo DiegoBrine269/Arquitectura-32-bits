@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\OneDrive - Instituto Politecnico Nacional\ESCOM\6TO SEMESTRE\Sistemas Embebidos\1er Parcial\Procesador\simulation\modelsim
+valu
+IgRVbzgUI4kzWYJJ[KBGVj2
+VYmK6^03<]`@_XVbLH<S8k2
+Z1 dE:\OneDrive - Instituto Politecnico Nacional\ESCOM\6TO SEMESTRE\Sistemas Embebidos\1er Parcial\Procesador\simulation\modelsim
+w1680052607
+8E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v
+FE:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v
+L0 1
+Z2 OV;L;10.1b;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0
+!i10b 1
+!s100 Ij_kYnLzA1BJ[F0Aic2SP0
+!s85 0
+!s108 1681869207.137000
+!s107 E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador|-O0|E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v|
+!s101 -O0
+vdecodificador
+IXOLBDUGNIaQBg6Eg>iblb3
+VnVl0aZ6zdeULjHNGznTYj2
+R1
+w1680140672
+8E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v
+FE:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 jc1hA093zJUU=Wko]oU8B3
+!s85 0
+!s108 1681869207.253000
+!s107 E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador|-O0|E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v|
+!s101 -O0
+vmemoria
+I8fdU`B<[>Y`i39XP`gk_=1
+VIGnYl80MS@09LhPU:ZMJ>2
+R1
+w1681866772
+8E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v
+FE:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 :NBj>Oc<OV3I7IDPLYFL12
+!s85 0
+!s108 1681869207.385000
+!s107 E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador|-O0|E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v|
+!s101 -O0
+vprocesador
+I`Bi:c;QjL@YV9[20cIaAE2
+Vgh4Y?_JJI]SS0KK>[cm7[0
+R1
+Z5 w1681869203
+Z6 8E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v
+Z7 FE:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v
+L0 1
+R2
+r1
+31
+Z8 !s108 1681869207.639000
+Z9 !s107 E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador|-O0|E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v|
+R3
+R4
+!i10b 1
+!s100 ]_aW:8cDaML5<ZZ`Aeefh1
+!s85 0
+!s101 -O0
+vprocesador_tb
+I;nDXWn:S:IzflCN>[Mj=M1
+VD_iWAE4gRegCIbdT4g0>h2
+R1
+R5
+R6
+R7
+L0 95
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+!i10b 1
+!s100 Y4_PGk6g_fW^Ifm]VKlmH1
+!s85 0
+!s101 -O0
+vregisterfile
+IAzQPh:[8VAE]aWAeMWRo22
+VPhb?T7kRQT>GE[I04dXGX0
+R1
+w1681868923
+8E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v
+FE:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 h7l`Ld2A_oKZ^OKO?Y>>?1
+!s85 0
+!s108 1681869207.770000
+!s107 E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador|-O0|E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v|
+!s101 -O0
+vsignextend
+!i10b 1
+!s100 cBXQ1h=BV_FaZDOlkkSc=1
+I7I[3J8Oh?cniJVJM;PI7X2
+V1Y8BCabn3bG<heWWDD?IA1
+R1
+w1680140657
+8E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v
+FE:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1681869207.879000
+!s107 E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador|-O0|E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v|
+!s101 -O0
+R3
+R4

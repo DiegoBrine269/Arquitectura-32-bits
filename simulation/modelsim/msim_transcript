@@ -1,0 +1,274 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do procesador_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/OneDrive\ -\ Instituto\ Politecnico\ Nacional/ESCOM/6TO\ SEMESTRE/Sistemas\ Embebidos/1er\ Parcial/Procesador {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module registerfile
+# 
+# Top level modules:
+# 	registerfile
+# vlog -vlog01compat -work work +incdir+E:/OneDrive\ -\ Instituto\ Politecnico\ Nacional/ESCOM/6TO\ SEMESTRE/Sistemas\ Embebidos/1er\ Parcial/Procesador {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module procesador
+# -- Compiling module procesador_tb
+# 
+# Top level modules:
+# 	procesador_tb
+# vlog -vlog01compat -work work +incdir+E:/OneDrive\ -\ Instituto\ Politecnico\ Nacional/ESCOM/6TO\ SEMESTRE/Sistemas\ Embebidos/1er\ Parcial/Procesador {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memoria
+# 
+# Top level modules:
+# 	memoria
+# vlog -vlog01compat -work work +incdir+E:/OneDrive\ -\ Instituto\ Politecnico\ Nacional/ESCOM/6TO\ SEMESTRE/Sistemas\ Embebidos/1er\ Parcial/Procesador {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module decodificador
+# 
+# Top level modules:
+# 	decodificador
+# vlog -vlog01compat -work work +incdir+E:/OneDrive\ -\ Instituto\ Politecnico\ Nacional/ESCOM/6TO\ SEMESTRE/Sistemas\ Embebidos/1er\ Parcial/Procesador {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+E:/OneDrive\ -\ Instituto\ Politecnico\ Nacional/ESCOM/6TO\ SEMESTRE/Sistemas\ Embebidos/1er\ Parcial/Procesador {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+# 
+vsim -voptargs=+acc work.procesador_tb
+# vsim -voptargs=+acc work.procesador_tb 
+# Loading work.procesador_tb
+# Loading work.procesador
+# Loading work.memoria
+# Loading work.decodificador
+# Loading work.registerfile
+# Loading work.signextend
+# Loading work.alu
+add wave -position insertpoint  \
+sim:/procesador_tb/clk_i \
+sim:/procesador_tb/rst_ni \
+sim:/procesador_tb/wb_dato_o
+add wave -position insertpoint  \
+sim:/procesador_tb/DUT/pc_next \
+sim:/procesador_tb/DUT/pc_current
+add wave -position insertpoint  \
+sim:/procesador_tb/DUT/icache/we_i \
+sim:/procesador_tb/DUT/icache/addwrite_i \
+sim:/procesador_tb/DUT/icache/datowrite_i \
+sim:/procesador_tb/DUT/icache/re_i \
+sim:/procesador_tb/DUT/icache/addread_i \
+sim:/procesador_tb/DUT/icache/datoread_o \
+sim:/procesador_tb/DUT/icache/memoria
+add wave -position insertpoint  \
+sim:/procesador_tb/DUT/decode/opcode_i \
+sim:/procesador_tb/DUT/decode/regwrite_o \
+sim:/procesador_tb/DUT/decode/alusrc_o
+add wave -position insertpoint  \
+sim:/procesador_tb/DUT/regfile/we_i \
+sim:/procesador_tb/DUT/regfile/addwrite_i \
+sim:/procesador_tb/DUT/regfile/datowrite_i \
+sim:/procesador_tb/DUT/regfile/rers1_i \
+sim:/procesador_tb/DUT/regfile/addreadrs1_i \
+sim:/procesador_tb/DUT/regfile/datoreadrs1_o \
+sim:/procesador_tb/DUT/regfile/rers2_i \
+sim:/procesador_tb/DUT/regfile/addreadrs2_i \
+sim:/procesador_tb/DUT/regfile/datoreadrs2_o \
+sim:/procesador_tb/DUT/regfile/memoria
+add wave -position insertpoint  \
+sim:/procesador_tb/DUT/sextend/inst_i \
+sim:/procesador_tb/DUT/sextend/inmed_o
+add wave -position insertpoint  \
+sim:/procesador_tb/DUT/execute/salrd_o
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/simulation/modelsim/wave1.do}
+do {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/simulation/modelsim/wave1.do}
+run -continue
+run -continue
+run
+run
+run
+add wave -position insertpoint  \
+sim:/procesador_tb/DUT/execute/opers1_i \
+sim:/procesador_tb/DUT/execute/opers2_i \
+sim:/procesador_tb/DUT/execute/f7_i \
+sim:/procesador_tb/DUT/execute/f3_i
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module decodificador
+# 
+# Top level modules:
+# 	decodificador
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memoria
+# 
+# Top level modules:
+# 	memoria
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module procesador
+# -- Compiling module procesador_tb
+# 
+# Top level modules:
+# 	procesador_tb
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module procesador
+# -- Compiling module procesador_tb
+# 
+# Top level modules:
+# 	procesador_tb
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module registerfile
+# 
+# Top level modules:
+# 	registerfile
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+restart
+# Loading work.procesador_tb
+# Loading work.procesador
+# Loading work.memoria
+# Loading work.decodificador
+# Loading work.registerfile
+# Loading work.signextend
+# Loading work.alu
+run
+restart
+run
+restart
+run -all
+restart
+run -continue
+restart
+restart
+run
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module decodificador
+# 
+# Top level modules:
+# 	decodificador
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memoria
+# 
+# Top level modules:
+# 	memoria
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module procesador
+# -- Compiling module procesador_tb
+# 
+# Top level modules:
+# 	procesador_tb
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module procesador
+# -- Compiling module procesador_tb
+# 
+# Top level modules:
+# 	procesador_tb
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module registerfile
+# 
+# Top level modules:
+# 	registerfile
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+restart
+# Loading work.procesador_tb
+# Loading work.procesador
+# Loading work.memoria
+# Loading work.decodificador
+# Loading work.registerfile
+# Loading work.signextend
+# Loading work.alu
+run
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/decodificador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module decodificador
+# 
+# Top level modules:
+# 	decodificador
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memoria
+# 
+# Top level modules:
+# 	memoria
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module procesador
+# -- Compiling module procesador_tb
+# 
+# Top level modules:
+# 	procesador_tb
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/procesador.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module procesador
+# -- Compiling module procesador_tb
+# 
+# Top level modules:
+# 	procesador_tb
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/registerfile.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module registerfile
+# 
+# Top level modules:
+# 	registerfile
+vlog -vlog01compat -work work {+incdir+E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador} -O0 {E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/signextend.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+restart
+# Loading work.procesador_tb
+# Loading work.procesador
+# Loading work.memoria
+# Loading work.decodificador
+# Loading work.registerfile
+# Loading work.signextend
+# Loading work.alu
+run

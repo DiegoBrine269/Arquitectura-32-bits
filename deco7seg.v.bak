@@ -1,0 +1,40 @@
+module deco7seg (
+
+	input 		[3:0] hex_i,
+	output reg  [6:0] num_i 
+
+
+);
+
+	always@ (*)
+
+
+	begin 
+		case (hex_i)	//6543210
+			4'b0000: 		//0
+				num_o = 7b'1000000;
+			4'b0001: 		// 1
+				num_o = 7b'1111001;
+			4'b0010: 		// 2
+				num_o = 7b'0100100;
+			4'b0011: 		// 3
+				num_o = 7b'0110000;
+			4'b0100: 		// 4
+				num_o = 7b'0011001;
+			4'b0101: 		// 5
+				num_o = 7b'0010010;
+			4'b0110: 		// 6
+				num_o = 7b'0000010;
+			4'b0111: 		// 7
+				num_o = 7b'1111000;
+			4'b1000: 		// 8
+				num_o = 7b'0000000;
+			4'b1000: 		// 9
+				num_o = 7b'0000000;
+		
+		endcase
+			
+	end
+
+
+endmodule

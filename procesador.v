@@ -1,7 +1,9 @@
 module procesador (
-	input 				clk_i,		//seÃ±al de reloj
-	input					rst_ni, 		//reset activo en bajo
-	output[31:0]		wb_dato_o	//dato de write back al banco de registros
+	input 				clk_i,			// SeÃ±al de reloj
+	input					rst_ni, 			// Reset activo en bajo
+	input					output_sel,		// Selector de salida
+	output[31:0]		dato_monitor	//dato de write back al banco de registros
+
 );
 
 	// FETCH - BÃºsqueda y emisiÃ³n de instrucciones
@@ -49,7 +51,7 @@ module procesador (
 		.clk_i				(clk_i),
 		.we_i					(deco_regwrite_o),
 		.addwrite_i			(fetch_inst_o[11:7]),
-		.datowrite_i		(wb_dato_o),
+		.datowrite_i		(dato_monitor),
 		.rers1_i				(1'b1),
 		.addreadrs1_i		(fetch_inst_o[19:15]),
 		.datoreadrs1_o		(regread_datars1_o),
@@ -72,13 +74,13 @@ module procesador (
 
 
 	// EXECUTE - EjecuciÃ³n
-	wire	[31:0]	exe_dato_o;
+	wire	[31:0]		wb_data_o;
 	alu execute(
 		.opers1_i 		(regread_datars1_o),
 		.opers2_i 		(mux_alusrc_o),
 		.f7_i 			(fetch_inst_o[30]),
 		.f3_i 			(fetch_inst_o[14:12]),
-		.salrd_o 		(exe_dato_o)
+		.salrd_o 		(wb_data_o)
 	);
 
 
@@ -86,7 +88,7 @@ module procesador (
 
 
 	// WRITE BACK - Escritura de resultado al banco de registros
-	assign		wb_dato_o = exe_dato_o;
+	assign		dato_monitor = output_sel ? wb_data_o : fetch_inst_o;
 
 endmodule
 
@@ -95,7 +97,7 @@ endmodule
 module procesador_tb();
 	reg	 				clk_i;		
 	reg					rst_ni;		
-	wire		[31:0]	wb_dato_o;
+	wire		[31:0]	dato_monitor;
 
 	initial begin
 			clk_i = 1'b1;
@@ -113,7 +115,7 @@ module procesador_tb();
 	procesador DUT (
 		.clk_i 				(clk_i),
 		.rst_ni				(rst_ni),
-		.wb_dato_o			(wb_dato_o)
+		.dato_monitor		(dato_monitor)
 
 	);
 	

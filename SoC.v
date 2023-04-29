@@ -1,6 +1,7 @@
 module SoC (
 	input 	clk_i,
 	input 	rst_ni,
+	input 	output_sel,
 	output	[6:0] disp0,
 	output	[6:0] disp1,
 	output	[6:0] disp2,
@@ -21,9 +22,10 @@ module SoC (
 	);
 	
 	procesador core(
-		.clk_i 		(clk_div),		
-		.rst_ni		(rst_ni), 		
-		.wb_dato_o	(core_data_o)	
+		.clk_i 			(clk_div),		
+		.rst_ni			(rst_ni), 		
+		.output_sel		(output_sel),
+		.dato_monitor	(core_data_o)	
 	);
 	
 	deco7seg deco0(

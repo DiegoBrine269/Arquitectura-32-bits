@@ -1,5 +1,5 @@
 EDA Netlist Writer report for procesador
-Wed Apr 26 18:54:59 2023
+Wed Apr 26 19:48:31 2023
 Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Apr 26 18:54:59 2023 ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 26 19:48:31 2023 ;
 ; Revision Name             ; procesador                            ;
 ; Top-level Entity Name     ; SoC                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
-    Info: Processing started: Wed Apr 26 18:54:57 2023
+    Info: Processing started: Wed Apr 26 19:48:30 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off procesador -c procesador
 Info (204019): Generated file procesador_7_1200mv_85c_slow.vo in folder "E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file procesador_7_1200mv_0c_slow.vo in folder "E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/simulation/modelsim/" for EDA simulation tool
@@ -100,8 +100,8 @@ Info (204019): Generated file procesador_min_1200mv_0c_v_fast.sdo in folder "E:/
 Info (204019): Generated file procesador_v.sdo in folder "E:/OneDrive - Instituto Politecnico Nacional/ESCOM/6TO SEMESTRE/Sistemas Embebidos/1er Parcial/Procesador/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4535 megabytes
-    Info: Processing ended: Wed Apr 26 18:54:59 2023
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Wed Apr 26 19:48:31 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
